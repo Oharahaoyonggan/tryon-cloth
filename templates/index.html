@@ -1,0 +1,118 @@
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <meta name="generator" content="Hugo 0.84.0">
+    <title>TRY-ON CLOTH</title>
+
+
+    <!-- Favicons -->
+
+<meta name="theme-color" content="#7952b3">
+
+
+    <style>
+      body {
+        height: 100%;
+    }
+
+    body {
+    display: flex;
+    align-items: center;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    background-color: #f5f5f5;
+    }
+
+    .form-signin {
+    width: 100%;
+    max-width: 330px;
+    padding: 15px;
+    margin: auto;
+    }
+
+    .form-signin .checkbox {
+    font-weight: 400;
+    }
+
+    .form-signin .form-floating:focus-within {
+    z-index: 2;
+    }
+
+    .form-signin input[type="email"] {
+    margin-bottom: -1px;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+    }
+
+    .form-signin input[type="file"] {
+    margin-bottom: 10px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    }  
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+    </style>
+
+  </head>
+  <body class="text-center">
+    
+<main class="form-signin">
+  <form method=post enctype=multipart/form-data>
+    <img class="mb-4" alt="" width="72" height="57" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pg0KPCEtLSBHZW5lcmF0b3I6IEFkb2JlIElsbHVzdHJhdG9yIDE5LjAuMCwgU1ZHIEV4cG9ydCBQbHVnLUluIC4gU1ZHIFZlcnNpb246IDYuMDAgQnVpbGQgMCkgIC0tPg0KPHN2ZyB2ZXJzaW9uPSIxLjEiIGlkPSJDYXBhXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4Ig0KCSB2aWV3Qm94PSIwIDAgNDA3LjcgNDA3LjciIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDQwNy43IDQwNy43OyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+DQo8Zz4NCgk8Zz4NCgkJPHBhdGggZD0iTTQwNS41LDExOC4wMjFjLTAuMDk0LTAuMDk5LTAuMTkxLTAuMTk2LTAuMjktMC4yOWwtODQuMTYtNzQuOGMtMC43NjgtMC43LTEuNjY0LTEuMjQzLTIuNjQtMS42bC02MC44OC0yMS43Ng0KCQkJYy00LjE1My0xLjUwOC04Ljc0MiwwLjYzNy0xMC4yNSw0Ljc5Yy0wLjI3MiwwLjc0OS0wLjQzLDEuNTM0LTAuNDcsMi4zM2MwLDEuNzYtMi42NCw0Mi4zMi00My4yLDQyLjk2DQoJCQljLTQwLjgtMC42NC00My4zNi00MS4yLTQzLjQ0LTQyLjk2Yy0wLjIzNi00LjQxMi00LjAwNC03Ljc5Ny04LjQxNi03LjU2MWMtMC43NTgsMC4wNDEtMS41MDcsMC4xODktMi4yMjQsMC40NDFsLTYwLjgsMjINCgkJCWMtMC45NzYsMC4zNTctMS44NzIsMC45LTIuNjQsMS42bC04My42LDc0LjU2Yy0zLjIwMywzLjA0My0zLjMzMyw4LjEwNy0wLjI5LDExLjMxYzAuMDk0LDAuMDk5LDAuMTkxLDAuMTk2LDAuMjksMC4yOQ0KCQkJbDY2LjU2LDY3LjI4djE4NGMwLDQuNDE4LDMuNTgyLDgsOCw4aDI1My42YzQuNDE4LDAsOC0zLjU4Miw4LTh2LTE4NGw2Ni41Ni02Ny4yOEM0MDguNDEzLDEyNi4yODgsNDA4LjU0MywxMjEuMjI1LDQwNS41LDExOC4wMjENCgkJCXogTTMzOC40MSwxNzMuODExdi0zNy4xMmMwLTQuNDE4LTMuNTgyLTgtOC04cy04LDMuNTgyLTgsOHYyMzUuNTJIODQuNzN2LTIzNS41MmMwLTQuNDE4LTMuNTgyLTgtOC04cy04LDMuNTgyLTgsOHYzNy4yDQoJCQlsLTQ5LjItNDkuODRsNzYuMTYtNjguMTZsNTAuMDgtMTguMDhjNi4yMDQsMzEuOTY2LDM3LjE0Nyw1Mi44NTEsNjkuMTEzLDQ2LjY0N2MyMy42MDctNC41ODIsNDIuMDY1LTIzLjA0LDQ2LjY0Ny00Ni42NDcNCgkJCWw1MC4wOCwxOC4wOGw3NS45Miw2OC4xNkwzMzguNDEsMTczLjgxMXoiLz4NCgk8L2c+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8L3N2Zz4NCg==" />
+    
+    <h1 class="h3 mb-3 fw-normal">TRY ON CLOTH</h1>
+    <div id="formdiv">
+    <div class="form-floating">
+        <label for="floatingInput">Person Image</label>
+        <input type="file" name=image class="form-control" id="floatingInput" required>
+      <!-- <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com"> -->
+   
+    </div>
+    <div class="form-floating">
+        <label for="floatingPassword">Cloth Image</label>
+        <input type="file" name=Cimage class="form-control" id="floatingInput" required>
+      <!-- <input type="password" class="form-control" id="floatingPassword" placeholder="Password"> -->
+      
+    </div>
+
+    
+    <button class="w-100 btn btn-lg btn-primary" value=Upload type="submit" onclick="loading();">Submit</button>
+  </div>
+  <div  class="d-flex justify-content-center">
+    <div style="display:none;" id="myDiv" class="spinner-border" role="status">
+      <span class="sr-only">Loading...</span>
+    </div>
+  </div>
+    <p class="mt-5 mb-3 text-muted">special thanks to PF-AFN</p>
+  </form>
+  
+  
+</main>
+
+<script>
+  function loading(){
+    document.getElementById("myDiv").style.display = "block";
+  document.getElementById("formdiv").style.display = "none";
+        }
+</script>
+    
+  </body>
+</html>
